@@ -9,6 +9,7 @@ ENV DATABASE_PORT=3306
 ENV DATABASE_NAME=strapi
 ENV DATABASE_USERNAME=strapi
 ENV DATABASE_PASSWORD=strapi
+
 ENV DATABASE_SSL=false
 
 # Create and change to the app directory.
