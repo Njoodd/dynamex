@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bottom_bars",
+  "info": {
+    "name": "bottom_bar"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true,
+    "privateAttributes": [
+      "published_at",
+      "created_at",
+      "updated_at"
+    ]
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "bottom_id": {
+      "type": "string"
+    },
+    "style": {
+      "model": "style"
+    },
+    "items": {
+      "collection": "bottom-item"
+    }
+  }
+}

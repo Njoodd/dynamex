@@ -1,0 +1,90 @@
+{
+  "kind": "collectionType",
+  "collectionName": "base_comps",
+  "info": {
+    "name": "base_comp",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true,
+    "privateAttributes": [
+      "published_at",
+      "created_at",
+      "updated_at"
+    ]
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "button",
+        "label",
+        "hyperlink",
+        "container",
+        "horizontal_list",
+        "card",
+        "image"
+      ]
+    },
+    "style": {
+      "model": "style"
+    },
+    "text": {
+      "type": "string"
+    },
+    "textAr": {
+      "type": "json"
+    },
+    "visible": {
+      "type": "boolean"
+    },
+    "max_value": {
+      "type": "decimal"
+    },
+    "unlimited": {
+      "type": "boolean"
+    },
+    "children_style": {
+      "model": "style"
+    },
+    "components": {
+      "collection": "child-comp"
+    },
+    "src": {
+      "type": "string"
+    },
+    "disabled": {
+      "type": "boolean"
+    },
+    "action": {
+      "model": "action"
+    },
+    "values": {
+      "collection": "value"
+    },
+    "actionAr": {
+      "collection": "action"
+    },
+    "api_call": {
+      "model": "api-call"
+    },
+    "api": {
+      "type": "string"
+    },
+    "method": {
+      "type": "string"
+    },
+    "on_success": {
+      "collection": "action"
+    },
+    "on_fail": {
+      "collection": "action"
+    }
+  }
+}

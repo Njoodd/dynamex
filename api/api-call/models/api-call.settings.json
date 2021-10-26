@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "api_calls",
+  "info": {
+    "name": "api_call"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true,
+    "privateAttributes": [
+      "published_at",
+      "created_at",
+      "updated_at"
+    ]
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "placeholder": {
+      "type": "string"
+    },
+    "api": {
+      "model": "api"
+    }
+  }
+}

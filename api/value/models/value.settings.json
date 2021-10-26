@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "values",
+  "info": {
+    "name": "value"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true,
+    "privateAttributes": [
+      "published_at",
+      "created_at",
+      "updated_at"
+    ]
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "value": {
+      "type": "decimal"
+    }
+  }
+}

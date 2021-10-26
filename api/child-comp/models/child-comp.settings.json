@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "child_comps",
+  "info": {
+    "name": "child_comp",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true,
+    "privateAttributes": [
+      "published_at",
+      "created_at",
+      "updated_at"
+    ]
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "button",
+        "label",
+        "hyperlink",
+        "container",
+        "horizontal_list",
+        "progress_bar",
+        "card",
+        "image"
+      ]
+    },
+    "text": {
+      "type": "string"
+    },
+    "textAr": {
+      "type": "json"
+    },
+    "style": {
+      "model": "style"
+    },
+    "visible": {
+      "type": "boolean"
+    },
+    "max_value": {
+      "type": "decimal"
+    },
+    "src": {
+      "type": "string"
+    },
+    "disabled": {
+      "type": "boolean"
+    },
+    "action": {
+      "model": "action"
+    },
+    "values": {
+      "collection": "value"
+    },
+    "api_call": {
+      "model": "api-call"
+    },
+    "input_type": {
+      "type": "string"
+    },
+    "placeholder": {
+      "type": "string"
+    },
+    "onChange": {
+      "type": "string"
+    }
+  }
+}

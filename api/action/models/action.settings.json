@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "actions",
+  "info": {
+    "name": "action"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true,
+    "privateAttributes": [
+      "published_at",
+      "created_at",
+      "updated_at"
+    ]
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "action_type": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "variable_id": {
+      "type": "string"
+    },
+    "add_to_backstack": {
+      "type": "boolean"
+    },
+    "style": {
+      "model": "style"
+    }
+  }
+}

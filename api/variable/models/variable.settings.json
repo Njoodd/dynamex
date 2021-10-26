@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "variables",
+  "info": {
+    "name": "variable",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true,
+    "privateAttributes": [
+      "published_at",
+      "created_at",
+      "updated_at"
+    ]
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "key": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    },
+    "force_change": {
+      "type": "boolean"
+    }
+  }
+}

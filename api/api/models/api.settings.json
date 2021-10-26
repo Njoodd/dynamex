@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "apis",
+  "info": {
+    "name": "api"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true,
+    "privateAttributes": [
+      "published_at",
+      "created_at",
+      "updated_at"
+    ]
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "param": {
+      "model": "param"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "title_bars",
+  "info": {
+    "name": "title_bar"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true,
+    "privateAttributes": [
+      "published_at",
+      "created_at",
+      "updated_at"
+    ]
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "style": {
+      "model": "style"
+    }
+  }
+}

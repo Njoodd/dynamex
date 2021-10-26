@@ -10,7 +10,6 @@ ENV NODE_ENV production
 # Create and change to the app directory.
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
-ENV NODE_ENV=development
 
 # Copy application dependency manifests to the container image.
 # A wildcard is used to ensure both package.json AND package-lock.json are copied.

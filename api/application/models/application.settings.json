@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "applications",
+  "info": {
+    "name": "application"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true,
+    "privateAttributes": [
+      "published_at",
+      "created_at",
+      "updated_at"
+    ]
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "version": {
+      "type": "string"
+    },
+    "styleVersion": {
+      "type": "string"
+    },
+    "styles": {
+      "collection": "style"
+    },
+    "pages": {
+      "collection": "page"
+    },
+    "data": {
+      "collection": "variable"
+    }
+  }
+}

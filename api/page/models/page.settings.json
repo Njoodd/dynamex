@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "name": "page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true,
+    "privateAttributes": [
+      "published_at",
+      "created_at",
+      "updated_at"
+    ]
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "page_id": {
+      "type": "string"
+    },
+    "title_bar": {
+      "model": "title-bar"
+    },
+    "body": {
+      "model": "body"
+    },
+    "bottom": {
+      "model": "bottom-bar"
+    }
+  }
+}

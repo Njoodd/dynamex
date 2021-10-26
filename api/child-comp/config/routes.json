@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/child-comps",
+      "handler": "child-comp.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/child-comps/count",
+      "handler": "child-comp.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/child-comps/:id",
+      "handler": "child-comp.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/child-comps",
+      "handler": "child-comp.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/child-comps/:id",
+      "handler": "child-comp.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/child-comps/:id",
+      "handler": "child-comp.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

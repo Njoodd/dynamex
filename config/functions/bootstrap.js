@@ -10,4 +10,15 @@
  * See more details here: https://strapi.io/documentation/developer-docs/latest/setup-deployment-guides/configurations.html#bootstrap
  */
 
-module.exports = () => {};
+module.exports = () => {
+
+    process.nextTick(() => {
+        strapi.StrapIO = (require("strapio"))(strapi, {
+            cors: { 
+                origin: "*",
+                methods: ["GET", "POST", "PUT", "DELETE"],
+            },
+        });
+    });
+
+};

@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bodies",
+  "info": {
+    "name": "body"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true,
+    "privateAttributes": [
+      "published_at",
+      "created_at",
+      "updated_at"
+    ]
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "body_id": {
+      "type": "string"
+    },
+    "style": {
+      "model": "style"
+    },
+    "base_comps": {
+      "collection": "base-comp"
+    }
+  }
+}

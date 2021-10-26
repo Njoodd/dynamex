@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "styles",
+  "info": {
+    "name": "style"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true,
+    "privateAttributes": [
+      "published_at",
+      "created_at",
+      "updated_at"
+    ]
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "style_id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "text_family": {
+      "type": "string"
+    },
+    "text_size": {
+      "type": "string"
+    },
+    "text_color": {
+      "type": "string"
+    },
+    "text_style": {
+      "type": "string"
+    },
+    "primary_color": {
+      "type": "string"
+    },
+    "secondary_color": {
+      "type": "string"
+    },
+    "padding": {
+      "type": "string"
+    },
+    "margin": {
+      "type": "string"
+    },
+    "corner_radius": {
+      "type": "string"
+    },
+    "bg_color": {
+      "type": "string"
+    },
+    "align_text": {
+      "type": "string"
+    },
+    "selected_color": {
+      "type": "string"
+    },
+    "height": {
+      "type": "string"
+    },
+    "width": {
+      "type": "string"
+    },
+    "align_self": {
+      "type": "string"
+    }
+  }
+}

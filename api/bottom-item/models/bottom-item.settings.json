@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bottom_items",
+  "info": {
+    "name": "bottom_item"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true,
+    "privateAttributes": [
+      "published_at",
+      "created_at",
+      "updated_at"
+    ]
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "src": {
+      "type": "string"
+    },
+    "visible": {
+      "type": "boolean"
+    },
+    "selected": {
+      "type": "boolean"
+    },
+    "action": {
+      "model": "action"
+    }
+  }
+}
