@@ -2,7 +2,7 @@ FROM strapi/base
 
 ENV PORT 1337
 ENV HOST 0.0.0.0
-ENV NODE_ENV production
+ENV NODE_ENV development
 ENV DATABASE_HOST=mysql
 ENV DATABASE_CLIENT=mysql
 ENV DATABASE_PORT=3306
@@ -25,4 +25,4 @@ COPY . /usr/src/app
 RUN yarn build
 
 EXPOSE 1337
-CMD [ "yarn", "develop"]
+ENTRYPOINT [ "yarn", "develop"]
